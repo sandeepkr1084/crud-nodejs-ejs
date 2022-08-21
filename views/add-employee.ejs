@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <title>Add Employee</title>
+</head>
+
+<body>
+    <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
+        <div style="margin-top: 50px;">
+            <form action="/add-employee" method="POST">
+                <label>Name: </label>
+                <input type="text" placeholder="Name" name="name"><br><br>
+                <label>Email: </label>
+                <input type="email" placeholder="Email" name="email"><br><br>
+                <div style="text-align: right;">
+                    <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+                    <a href="/employees">Back to Dashboard</a>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>

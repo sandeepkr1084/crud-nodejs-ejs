@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update Employee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
+        <div style="margin-top: 50px;">
+            <form action="/update-employee" method="POST">
+                <input type="hidden" value="<%= employee._id %>" name="id">
+                <label>Name: </label>
+                <input type="text" placeholder="Name" name="name" value="<%= employee.name %>"><br><br>
+                <label>Email: </label>
+                <input type="email" placeholder="Email" name="email" value="<%= employee.email %>"><br><br>
+                <div style="text-align: right;">
+                    <button type="submit" class="btn btn-sm btn-primary">Update</button>
+                    <a href="/employees">Back to Dashboard</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
